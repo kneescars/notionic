@@ -27,7 +27,7 @@ const BLOG = {
   previewImagesEnabled: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateHost: 'og-gobbet.vercel.app', // The link to generate OG image, don't end with a slash
-  defaultCover: '/public/cover.jpg',
+  defaultCover: '/public/cover.png',
   socialLink: {
     twitter: 'https://twitter.com/cassianogobbet',
     github: 'https://github.com/kneescars',
