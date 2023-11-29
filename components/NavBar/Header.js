@@ -1,21 +1,22 @@
-import { useEffect, useCallback, useState, useRef } from 'react'
-import Link from 'next/link'
-import BLOG from '@/blog.config'
-import { lang } from '@/lib/lang'
-import { useRouter } from 'next/router'
 import {
-  HomeIcon,
-  NewspaperIcon,
   CollectionIcon,
-  SparklesIcon,
+  HomeIcon,
+  MenuIcon,
+  NewspaperIcon,
   SearchIcon,
-  MenuIcon
+  SparklesIcon
 } from '@heroicons/react/outline'
+import { useCallback, useEffect, useRef, useState } from 'react'
+
+import BLOG from '@/blog.config'
+import LangSwitcher from './LangSwitcher.js'
+import Link from 'next/link'
+import Logo from '@/components/Common/Logo'
 import Social from '../Common/Social.js'
 import ThemeSwitcher from './ThemeSwitcher.js'
-import LangSwitcher from './LangSwitcher.js'
-import Logo from '@/components/Common/Logo'
+import { lang } from '@/lib/lang'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 const NavBar = () => {
   const router = useRouter()
@@ -134,7 +135,7 @@ const NavBar = () => {
 }
 
 const Header = ({ navBarTitle, fullWidth }) => {
-  const [showTitle, setShowTitle] = useState(false)
+  const [showTitle, setShowTitle] = useState(true)// changed from false
   const useSticky = !BLOG.autoCollapsedNavBar
   const navRef = useRef(/** @type {HTMLDivElement} */ undefined)
   const sentinelRef = useRef(/** @type {HTMLDivElement} */ undefined)
@@ -155,7 +156,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
       if (window.pageYOffset > 400) {
         setShowTitle(true)
       } else {
-        setShowTitle(false)
+        setShowTitle(true) // line that triggers showing title
       }
     })
     return () => {
@@ -192,7 +193,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
                 !showTitle ? 'hidden' : 'hidden xl:block'
               }`}
             >
-              {BLOG.title},{' '}
+              {BLOG.title} - {' '}
               <span className='font-normal'>{BLOG.description}</span>
             </p>
           )}

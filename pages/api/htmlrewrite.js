@@ -1,5 +1,5 @@
-import { getBlocksMaps } from '@/lib/getBlocksMaps'
 import BLOG from '@/blog.config'
+import { getBlocksMaps } from '@/lib/getBlocksMaps'
 
 async function getBlockItem(path) {
   const { pagesJson, siteConfigObj } = await getBlocksMaps()
@@ -86,7 +86,7 @@ module.exports = async (req, res) => {
     .replace('<meta name="robots" content="noindex">', '')
     .replace(
       '<link rel="icon" href="/share/static/favicon.ico">',
-      '<link rel="icon" href="/favicon.svg">'
+      '<link rel="icon" href="/favicon.png">'
     )
     .replace(
       '<link rel="apple-touch-icon" href="/share/static/logo-192.png">',
