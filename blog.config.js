@@ -31,7 +31,7 @@ const BLOG = {
   socialLink: {
     twitter: 'https://twitter.com/cassianogobbet',
     github: 'https://github.com/kneescars',
-    telegram: 'https://t.me/cassiano_fr'
+    telegram: 'https://t.me/cassiano_telegram'
   },
   seo: {
     keywords: ['Cassiano Gobbet', 'Blog', 'portfolio', 'digital','media'],
