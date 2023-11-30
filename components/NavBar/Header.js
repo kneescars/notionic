@@ -9,11 +9,11 @@ import {
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 import BLOG from '@/blog.config'
-import LangSwitcher from './LangSwitcher.js'
+// import LangSwitcher from './LangSwitcher.js'
 import Link from 'next/link'
 import Logo from '@/components/Common/Logo'
 import Social from '../Common/Social.js'
-import ThemeSwitcher from './ThemeSwitcher.js'
+// import ThemeSwitcher from './ThemeSwitcher.js'
 import { lang } from '@/lib/lang'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
