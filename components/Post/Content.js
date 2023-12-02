@@ -28,8 +28,7 @@ export default function Content (props) {
       {frontMatter.type[0] !== 'Page' && (
         <nav className='flex mt-5 mb-10 items-start text-gray-500 dark:text-gray-400'>
           <div className='mr-2 mb-4 md:ml-0'>
-            {/* hide post date inside the post */}
-            {/* <FormattedDate date={frontMatter.date} /> */}
+            <FormattedDate date={frontMatter.date} />
           </div>
           {frontMatter.tags && (
             <div className='flex flex-nowrap max-w-full overflow-x-auto article-tags'>
