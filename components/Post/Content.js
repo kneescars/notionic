@@ -1,12 +1,10 @@
 import BLOG from '@/blog.config'
-import PropTypes from 'prop-types'
-import Link from 'next/link'
-
-import FormattedDate from '@/components/Common/FormattedDate'
-import TagItem from '@/components/Common/TagItem'
-import NotionRenderer from '@/components/Post/NotionRenderer'
-
 import { ChevronLeftIcon } from '@heroicons/react/outline'
+import FormattedDate from '@/components/Common/FormattedDate'
+import Link from 'next/link'
+import NotionRenderer from '@/components/Post/NotionRenderer'
+import PropTypes from 'prop-types'
+import TagItem from '@/components/Common/TagItem'
 
 export default function Content (props) {
   const { frontMatter, blockMap, pageTitle } = props
@@ -30,7 +28,8 @@ export default function Content (props) {
       {frontMatter.type[0] !== 'Page' && (
         <nav className='flex mt-5 mb-10 items-start text-gray-500 dark:text-gray-400'>
           <div className='mr-2 mb-4 md:ml-0'>
-            <FormattedDate date={frontMatter.date} />
+            {/* hide post date inside the post */}
+            {/* <FormattedDate date={frontMatter.date} /> */}
           </div>
           {frontMatter.tags && (
             <div className='flex flex-nowrap max-w-full overflow-x-auto article-tags'>
