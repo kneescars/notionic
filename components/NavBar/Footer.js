@@ -1,15 +1,16 @@
-import Link from 'next/link'
-import BLOG from '@/blog.config'
-import { lang } from '@/lib/lang'
-import { useRouter } from 'next/router'
 import {
-  UserIcon,
-  UsersIcon,
   BookOpenIcon,
-  MailIcon
+  MailIcon,
+  UserIcon,
+  UsersIcon
 } from '@heroicons/react/outline'
+
+import BLOG from '@/blog.config'
+import Link from 'next/link'
 import Social from '../Common/Social.js'
+import { lang } from '@/lib/lang'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 const Footer = ({ fullWidth }) => {
   const router = useRouter()
@@ -37,7 +38,7 @@ const Footer = ({ fullWidth }) => {
     },
     {
       id: 1,
-      name: t.NAV.FRINEDS,
+      name: t.NAV.FRIENDS,
       to: '/friends',
       icon: <UsersIcon className='inline-block mb-1 h-5 w-5' />,
       show: BLOG.pagesShow.friends
