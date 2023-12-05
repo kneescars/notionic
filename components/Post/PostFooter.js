@@ -1,10 +1,10 @@
+import { MailIcon, ThumbUpIcon } from '@heroicons/react/outline'
+
 import BLOG from '@/blog.config'
-import { useState } from 'react'
+import WechatPay from '@/components/Post/WechatPay'
 import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
-
-import WechatPay from '@/components/Post/WechatPay'
-import { MailIcon, ThumbUpIcon } from '@heroicons/react/outline'
+import { useState } from 'react'
 
 const PostFooter = () => {
   const [showPay, setShowPay] = useState(false)
