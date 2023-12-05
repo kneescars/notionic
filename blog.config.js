@@ -1,15 +1,15 @@
 const BLOG = {
   title: 'Cassiano Gobbet',
   author: 'Cassiano Gobbet',
-  email: 'cassiano[at]zeitgeist.digital',
-  link: 'https://cassiano.zeitgeist.digital',
+  email: 'cassiano@zeitgeist.digital',
+  link: 'https://zeitgeist.digital',
   newsletter: 'Digital Zeitgeist',
   description: 'Digital | Media | Tech',
   lang: 'en-US', // ['en-US', 'fr-FR', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Europe/Paris', // See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'dark', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
-  lightBackground: '#212936', // use hex value, don't forget '#' e.g #fffefc, originally #F6F8FA
+  lightBackground: '#F6F8FA', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#212936', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Notionic in a folder
   since: 2022, // If leave this empty, current year will be used.
