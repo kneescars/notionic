@@ -3,9 +3,9 @@ import { useEffect } from 'react'
 const Utterances = ({ issueTerm, layout }) => {
   useEffect(() => {
     const theme =
-      BLOG.appearance === 'auto'
+      BLOG.appearance === 'dark'
         ? 'preferred-color-scheme'
-        : BLOG.appearance === 'light'
+        : BLOG.appearance === 'dark'
           ? 'github-light'
           : 'github-dark'
     const script = document.createElement('script')
