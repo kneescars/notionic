@@ -13,7 +13,7 @@ import BLOG from '@/blog.config'
 import Link from 'next/link'
 import Logo from '@/components/Common/Logo'
 import Social from '../Common/Social.js'
-// import ThemeSwitcher from './ThemeSwitcher.js'
+import ThemeSwitcher from './ThemeSwitcher.js'
 import { lang } from '@/lib/lang'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
@@ -93,8 +93,8 @@ const NavBar = () => {
       </ul>
 
       <div className='nav-func-btn block'>
-        {/*<ThemeSwitcher />
-        <LangSwitcher />*/}
+        <ThemeSwitcher />
+        {/*<LangSwitcher />*/}
       </div>
 
       {/* Mobile Phone Menu */}
