@@ -10,17 +10,10 @@ const ThemeSwitcher = () => {
   useEffect(() => {
     setHasMounted(true)
   }, [])
-
-  // Check if the theme is 'light', and if so, set it to 'dark'
-  useEffect(() => {
-    if (theme === 'light') {
-      setTheme('dark')
-    }
-  }, [theme, setTheme])
-
   return (
     <>
       <button
+        // title={`Toggle theme - current ${theme}`}
         aria-label='ThemeSwitcher'
         onClick={() =>
           setTheme(
