@@ -63,9 +63,9 @@ const NavBar = () => {
     {
       id: 4,
       name: t.NAV.SEARCH,
-      to: '/search',
-      icon: <SearchIcon className='inline-block mb-1 h-5 w-5' />,
-      show: true
+      to: 'https://zeitgeist.digital',
+      icon: <NewspaperIcon className='inline-block mb-1 h-5 w-5' />,
+      show: true,
     }
   ]
   return (
