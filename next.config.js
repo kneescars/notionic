@@ -1,4 +1,7 @@
 module.exports = {
+  httpAgentOptions: {
+    keepAlive: true,
+  },
   i18n: {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
