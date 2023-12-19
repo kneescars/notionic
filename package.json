@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.10",
+    "debug": "4.3.2",
     "feed": "^4.2.2",
     "framer-motion": "6.4.3",
     "got": "^12.6.1",
@@ -35,11 +36,13 @@
     "p-memoize": "^6.0.2",
     "preact": "^10.19.3",
     "prism-theme-vars": "^0.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-intersection-observer": "^9.5.3",
     "react-notion-x": "^6.16.0",
     "sharp": "^0.30.7",
-    "use-ackee": "^3.0.1"
+    "use-ackee": "^3.0.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@heroicons/react": "^1.0.6",
