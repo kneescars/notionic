@@ -67,13 +67,13 @@ module.exports = async (req, res) => {
 
     <div class="navigation__icon">
       <a target="_blank" href=${siteConfigObj['First Social Link']}>
-        <Image alt="Telegram" src="${siteConfigObj['First Social Icon']}" />
+        <img alt="Telegram" src="${siteConfigObj['First Social Icon']}" />
       </a>
       <a target="_blank" href=${siteConfigObj['Second Social Link']}>
-        <Image alt="Twitter" src="${siteConfigObj['Second Social Icon']}" />
+        <img alt="Twitter" src="${siteConfigObj['Second Social Icon']}" />
       </a>
       <a target="_blank" href=${siteConfigObj['Third Social Link']}>
-        <Image alt="Github" src="${siteConfigObj['Third Social Icon']}" />
+        <img alt="Github" src="${siteConfigObj['Third Social Icon']}" />
       </a>
     </div>
 

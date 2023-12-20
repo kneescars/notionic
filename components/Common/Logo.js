@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 const Logo = (props) => (
-  <Image
+  <img
     src="favicon.png"
     alt="Your Logo"
     width="24"
