@@ -43,7 +43,7 @@ module.exports = async (req, res) => {
     <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
     <label for="nav-toggle" class="navigation__button">
       <a aria-label="toggle navigation menu" class="navigation__logo">
-        <img alt="logo" class="logo" src="${siteConfigObj['Site Logo']}" />
+        <Image alt="logo" class="logo" src="${siteConfigObj['Site Logo']}" />
       </a>
     </label>
     <div class="navigation__background"></div>
@@ -67,13 +67,13 @@ module.exports = async (req, res) => {
 
     <div class="navigation__icon">
       <a target="_blank" href=${siteConfigObj['First Social Link']}>
-        <img alt="Telegram" src="${siteConfigObj['First Social Icon']}" />
+        <Image alt="Telegram" src="${siteConfigObj['First Social Icon']}" />
       </a>
       <a target="_blank" href=${siteConfigObj['Second Social Link']}>
-        <img alt="Twitter" src="${siteConfigObj['Second Social Icon']}" />
+        <Image alt="Twitter" src="${siteConfigObj['Second Social Icon']}" />
       </a>
       <a target="_blank" href=${siteConfigObj['Third Social Link']}>
-        <img alt="Giithub" src="${siteConfigObj['Third Social Icon']}" />
+        <Image alt="Github" src="${siteConfigObj['Third Social Icon']}" />
       </a>
     </div>
 
